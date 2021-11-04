@@ -1,30 +1,19 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <!-- 一级路由 -->
+  <router-view></router-view>
 </template>
+<script>
+export default {
+  setup () {
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
   }
 }
+</script>
+<style lang="less" scoped>
+// 引入我们定义了less变化的文件
+// ~线不能丢
+
+// .test {
+//   color: @xtxColor;
+// }
 </style>
