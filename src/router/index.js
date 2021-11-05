@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 const Layout = () => import('@/views/Layout')
 const Home = () => import('@/views/Home/index')
 const TopCategory = () => import('@/views/Category')
+const Goods = () => import('@/views/Goods/index')
 const routes = [
   {
     path: '/',
@@ -10,11 +11,10 @@ const routes = [
       { path: '/', component: Home },
       // 增加分类路由绑定
       { path: '/category/:id', component: TopCategory },
-      { path: '/product/:id', name: 'product' }
-      // { path: '/cart', name: 'cart' },
-      // { path: '/checkout', name: 'checkout' },
-      // { path: '/pay', name: 'pay' },
-      // { path: '/pay/result', name: 'result' }
+      { path: '/product/:id', name: 'product' },
+      // { path: '/category/sub/:id', component: SubCategory },
+      { path: '/goods/:id', component: Goods }
+
     ]
   }
 ]

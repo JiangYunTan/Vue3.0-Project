@@ -44,26 +44,6 @@ import GoodsItem from './components/goods-item.vue'
 import { ref, onMounted } from 'vue'
 import { useRoute, onBeforeRouteUpdate } from 'vue-router'
 import { findBanner } from '@/api/home'
-// import { onMounted, ref } from 'vue'
-// export default {
-//   name: 'HomeBanner',
-//   setup () {
-//     const bannerList = ref([])
-//     async function loadBannerList () {
-//       // 参数修改
-//       // ajax
-//       const res = await findBanner()
-//       bannerList.value = res.result
-//     }
-//     onMounted(() => {
-//       // 调用函数
-//       loadBannerList()
-//     })
-//     return {
-//       bannerList
-//     }
-//   }
-// }
 export default {
   name: 'TopCategory',
   components: { GoodsItem },
